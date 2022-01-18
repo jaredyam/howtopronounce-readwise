@@ -5,6 +5,11 @@
 <h4 align=center>
   Push <a href="howtopronounce.cc">howtopronounce.cc</a> tech terms in the <i>Readwise</i> fashion.
 </h4>
+<h4 align="center">
+  <a href="https://github.com/jaredyam/howtopronounce-readwise/actions/workflows/cron.yml">
+    <img src="https://github.com/jaredyam/howtopronounce-readwise/actions/workflows/cron.yml/badge.svg">
+  </a>
+</h4>
 
 ## Introduction
 
