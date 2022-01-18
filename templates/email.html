@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HowToPronounce Readwise</title>
+  <style type="text/css">
+    center {
+      min-width: 580px;
+      width: 100%;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 10px;
+      padding: 0;
+      align-items: center;
+      vertical-align: top;
+      margin: 0 auto;
+      width: 580px;
+      float: none;
+      letter-spacing: 1px;
+      font-family: sans-serif;
+    }
+
+    p {
+      margin: 0;
+      color: #0a0a0a;
+      font-family: "Bookerly", Georgia, serif;
+      font-weight: normal;
+      line-height: 1.3;
+      padding: 0;
+      text-align: left;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    p.audios {
+      vertical-align: middle;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: rgb(85, 26, 139);
+      font-family: "Bookerly", Georgia, serif;
+      font-size: 2rem;
+      font-weight: normal;
+      line-height: 1.3;
+      text-decoration: none;
+    }
+
+    tbody {
+      background-color: #e4f0f5;
+    }
+
+    td {
+      padding: 0;
+      text-align: left;
+      vertical-align: top;
+      color: #0a0a0a;
+      font-family: "Bookerly", Georgia, serif;
+      font-weight: normal;
+      line-height: 1.3;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    tr {
+      padding: 0;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #0a0a0a;
+      font-family: "Bookerly", Georgia, serif;
+      font-weight: normal;
+      line-height: 1.3;
+      margin: 0;
+      padding: 10px;
+      text-align: left;
+      font-size: 16px;
+      background: #fefefe;
+    }
+
+    hr {
+      border-color: #776090;
+    }
+
+    span {
+      font-size: 0.8rem;
+      margin: 0 1rem 0 0.3rem;
+      vertical-align: middle;
+    }
+
+    span.emoji {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    b.upvotes {
+      color: #776090;
+      font-size: 1.2rem;
+    }
+
+    audio {
+      vertical-align: middle;
+      width: 0;
+      transform: scale(0.8);
+      filter: invert(1%) sepia(20%) saturate(740%) hue-rotate(220deg) brightness(90%);
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <table>
+              <tbody>{% for term in terms %}
+                <tr>
+                  <th>
+                    <p>
+                      <a href="{{ term.url }}"><b>{{ term.name }}</b></a>
+                    </p>
+                    <p class="audios">{% for audio in term.audios %}
+                      <audio controls><a href="{{ audio.url }}"><span class="emoji">⏯️</span></a>
+                        <source src="{{ audio.url }}">
+                        </source></audio>
+                      <span> (<b class="upvotes">{{ audio.upvotes }}</b> Upvotes)
+                      </span>{% endfor %}
+                    </p>
+                    <hr />
+                    <p>{{ term.description }}</p>
+                  </th>
+                </tr>{% endfor %}
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+</body>
+
+</html>

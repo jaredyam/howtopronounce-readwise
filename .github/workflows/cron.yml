@@ -1,0 +1,46 @@
+name: cron
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PERSONAL_BRANCH: ${{ github.actor }}
+      SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+      SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
+      RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+    steps:
+      - name: Checkout repo code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Checkout personal branch
+        run: git checkout "$PERSONAL_BRANCH" 2>/dev/null || git checkout -b "$PERSONAL_BRANCH"
+
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Send email
+        run: python main.py --sender-email "$SENDER_EMAIL" --sender-password "$SENDER_PASSWORD" --receiver-email "$RECEIVER_EMAIL"
+
+      - name: Commit sent terms
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update sent terms"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ env.PERSONAL_BRANCH }}
