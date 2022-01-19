@@ -3,3 +3,8 @@ scikit-learn
 k8s
 DevOps
 SaaS
+Istio
+IntelliJ
+IaaS
+Appium
+Nginx
