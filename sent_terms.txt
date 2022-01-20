@@ -8,3 +8,8 @@ IntelliJ
 IaaS
 Appium
 Nginx
+Kubernetes
+OAuth
+XAMPP
+Hadoop
+MySQL
