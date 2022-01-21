@@ -13,3 +13,8 @@ OAuth
 XAMPP
 Hadoop
 MySQL
+Kotlin
+AirBnB
+Xamarin
+Coursera
+MariaDB
