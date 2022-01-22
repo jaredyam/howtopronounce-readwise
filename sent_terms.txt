@@ -18,3 +18,8 @@ AirBnB
 Xamarin
 Coursera
 MariaDB
+Kubectl
+Keras
+GitHub
+NuGet
+Tkinter
