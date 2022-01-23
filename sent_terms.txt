@@ -23,3 +23,8 @@ Keras
 GitHub
 NuGet
 Tkinter
+Redis
+Vue
+Mesos
+Kibana
+Quora
