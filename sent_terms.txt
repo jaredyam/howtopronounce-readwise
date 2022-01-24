@@ -28,3 +28,8 @@ Vue
 Mesos
 Kibana
 Quora
+MinGW
+BLOB
+SATA
+CLOB
+Laravel
