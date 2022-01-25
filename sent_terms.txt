@@ -33,3 +33,8 @@ BLOB
 SATA
 CLOB
 Laravel
+Autofac
+Roslyn
+SQLyog
+JSONP
+Akka
