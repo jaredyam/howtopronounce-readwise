@@ -38,3 +38,8 @@ Roslyn
 SQLyog
 JSONP
 Akka
+LinkedIn
+Google
+Memcached
+Jenkins
+Sqoop
