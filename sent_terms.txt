@@ -43,3 +43,8 @@ Google
 Memcached
 Jenkins
 Sqoop
+Orleans
+Scala
+Pascal
+Netflix
+Visio
