@@ -48,7 +48,11 @@ class EmailSender:
                 "url": target_url,
                 "name": current_term,
                 "description": description,
-                "audios": [{"url": url, "upvotes": upvotes} for url, upvotes in zip(audios_urls, audios_upvotes)],
+                "audios": sorted(
+                    [{"url": url, "upvotes": upvotes} for url, upvotes in zip(audios_urls, audios_upvotes)],
+                    key=lambda audio: audio["upvotes"],
+                    reverse=True,
+                ),
                 "related_terms": list(dict.fromkeys(most_searched_terms + related_terms).keys()),
             }
 
