@@ -48,3 +48,8 @@ Scala
 Pascal
 Netflix
 Visio
+Pilosa
+Ubuntu
+Adobe
+Nokia
+Cobol
