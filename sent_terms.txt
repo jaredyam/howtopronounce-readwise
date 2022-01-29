@@ -53,3 +53,8 @@ Ubuntu
 Adobe
 Nokia
 Cobol
+PaaS
+Linux
+FreeBSD
+Cordova
+FileZilla
