@@ -58,3 +58,8 @@ Linux
 FreeBSD
 Cordova
 FileZilla
+Petya
+ANSI
+Reddit
+Ceph
+Paxos
