@@ -63,3 +63,8 @@ ANSI
 Reddit
 Ceph
 Paxos
+YouTube
+DDoS
+eBay
+Magento
+Instagram
