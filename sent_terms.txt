@@ -68,3 +68,8 @@ DDoS
 eBay
 Magento
 Instagram
+sed
+grep
+httpd
+Fluentd
+IOPS
