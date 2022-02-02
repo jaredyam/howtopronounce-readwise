@@ -73,3 +73,8 @@ grep
 httpd
 Fluentd
 IOPS
+Ubisoft
+Mageia
+Symbian
+Lycos
+Veusz
