@@ -78,3 +78,8 @@ Mageia
 Symbian
 Lycos
 Veusz
+Riak
+arXiv
+Aptana
+Trello
+Haxe
