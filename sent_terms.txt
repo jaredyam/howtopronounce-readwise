@@ -83,3 +83,8 @@ arXiv
 Aptana
 Trello
 Haxe
+Spotify
+Verilog
+Streamlio
+Vespa
+Deis
