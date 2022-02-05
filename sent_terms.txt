@@ -88,3 +88,8 @@ Verilog
 Streamlio
 Vespa
 Deis
+Jedis
+Redisson
+Mockito
+YUI
+SciPy
