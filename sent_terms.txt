@@ -93,3 +93,8 @@ Redisson
 Mockito
 YUI
 SciPy
+IPython
+LaTeX
+Scrapy
+SymPy
+Ceylon
