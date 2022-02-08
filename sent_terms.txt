@@ -103,3 +103,8 @@ Morphix
 Knoppix
 SHA256
 AUR
+Feren
+Zorin
+Manjaro
+HashiCorp
+char
