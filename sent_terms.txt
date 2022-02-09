@@ -108,3 +108,8 @@ Zorin
 Manjaro
 HashiCorp
 char
+swf
+swc
+fla
+C10K
+Minikube
