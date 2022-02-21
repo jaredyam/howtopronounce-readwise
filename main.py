@@ -77,6 +77,10 @@ class EmailSender:
             return terms_info
 
     def send(self, terms_info, address):
+        if len(terms_info) == 0:
+            print("No new terms found.")
+            return None
+
         email = EmailMessage()
         email["Subject"] = f"Daily HowToPronounce ({', '.join([term['name'] for term in terms_info])})"
         email["From"] = self.address
