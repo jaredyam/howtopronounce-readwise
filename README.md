@@ -3,7 +3,7 @@
   <br />
 </h1>
 <h4 align=center>
-  Push <a href="howtopronounce.cc">howtopronounce.cc</a> tech terms in the <i>Readwise</i> fashion.
+  Push <a href="http://www.howtopronounce.cc">howtopronounce.cc</a> tech terms in the <i>Readwise</i> fashion.
 </h4>
 <h4 align="center">
   <a href="https://github.com/jaredyam/howtopronounce-readwise/actions/workflows/cron.yml">
@@ -13,9 +13,9 @@
 
 ## Introduction
 
-[HowToPronounce: the pronunciation dictionary](howtopronounce.cc) is a website that tells you How to pronounce programming and computer science terms in English. It’s handy for retrieving tech terms you are interested in but do not sure how to pronounce.
+[HowToPronounce: the pronunciation dictionary](http://www.howtopronounce.cc) is a website that tells you How to pronounce programming and computer science terms in English. It’s handy for retrieving tech terms you are interested in but do not sure how to pronounce.
 
-This repo helps you learn about all these terms in the _Readwise_ way. _Readwise_ sends you a daily email resurfacing your history highlights. Similarly, this repo will send you a daily email containing tech terms from [HowToPronounce: the pronunciation dictionary](howtopronounce.cc), including all possible pronunciations with upvotes and concise description of the word.
+This repo helps you learn about all these terms in the _Readwise_ way. _Readwise_ sends you a daily email resurfacing your history highlights. Similarly, this repo will send you a daily email containing tech terms from [HowToPronounce: the pronunciation dictionary](http://www.howtopronounce.cc), including all possible pronunciations with upvotes and concise description of the word.
 ## Email preview
 
 <table align="center" border="0">
