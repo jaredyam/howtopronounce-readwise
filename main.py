@@ -68,8 +68,8 @@ class EmailSender:
 
             terms_info = []
             start = time.time()
-            for t in sent_terms:
-                for t in self.crawl(t)["related_terms"]:
+            for st in sent_terms:
+                for t in self.crawl(st)["related_terms"]:
                     if t not in sent_terms:
                         terms_info.append(self.crawl(t))
                     if len(terms_info) == self.n_terms_per_retreive or (time.time() - start) > 7200:
