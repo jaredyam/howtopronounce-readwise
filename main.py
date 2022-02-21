@@ -42,8 +42,10 @@ class EmailSender:
                 int(btn.get("data-like-count")) for btn in pronunciation_card.find_all("button", class_="like")
             ]
             description = description_card.find(class_="card-body").text.strip()
-            related_terms = [a.get("href").lstrip("/") for a in related_terms_card.find_all("a")]
-            most_searched_terms = [a.get("href").lstrip("/") for a in most_searched_terms_card.find_all("a")]
+            related_terms = [parse.unquote(a.get("href").lstrip("/")) for a in related_terms_card.find_all("a")]
+            most_searched_terms = [
+                parse.unquote(a.get("href").lstrip("/")) for a in most_searched_terms_card.find_all("a")
+            ]
             return {
                 "url": target_url,
                 "name": current_term,
@@ -66,8 +68,8 @@ class EmailSender:
 
             terms_info = []
             start = time.time()
-            for t in sent_terms:
-                for t in self.crawl(t)["related_terms"]:
+            for st in sent_terms:
+                for t in self.crawl(st)["related_terms"]:
                     if t not in sent_terms:
                         terms_info.append(self.crawl(t))
                     if len(terms_info) == self.n_terms_per_retreive or (time.time() - start) > 7200:
@@ -75,6 +77,9 @@ class EmailSender:
             return terms_info
 
     def send(self, terms_info, address):
+        if len(terms_info) == 0:
+            print("No new terms found.")
+
         email = EmailMessage()
         email["Subject"] = f"Daily HowToPronounce ({', '.join([term['name'] for term in terms_info])})"
         email["From"] = self.address
