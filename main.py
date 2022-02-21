@@ -42,8 +42,10 @@ class EmailSender:
                 int(btn.get("data-like-count")) for btn in pronunciation_card.find_all("button", class_="like")
             ]
             description = description_card.find(class_="card-body").text.strip()
-            related_terms = [a.get("href").lstrip("/") for a in related_terms_card.find_all("a")]
-            most_searched_terms = [a.get("href").lstrip("/") for a in most_searched_terms_card.find_all("a")]
+            related_terms = [parse.unquote(a.get("href").lstrip("/")) for a in related_terms_card.find_all("a")]
+            most_searched_terms = [
+                parse.unquote(a.get("href").lstrip("/")) for a in most_searched_terms_card.find_all("a")
+            ]
             return {
                 "url": target_url,
                 "name": current_term,
