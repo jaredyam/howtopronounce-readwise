@@ -128,3 +128,8 @@ J2ME
 J2EE
 jOOQ
 jOOX
+Clang
+www
+Buildr
+AspectJ
+SLI
