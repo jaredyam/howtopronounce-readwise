@@ -133,3 +133,8 @@ www
 Buildr
 AspectJ
 SLI
+NVIDIA
+Symantec
+Xiaomi
+Vi
+Baidu
