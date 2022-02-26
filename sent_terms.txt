@@ -138,3 +138,8 @@ Symantec
 Xiaomi
 Vi
 Baidu
+Alibaba
+Akamai
+Sina
+Weibo
+Sohu
