@@ -148,3 +148,8 @@ C++
 Kruskal
 EclEmma
 NUMA
+DoS
+iBatis
+RxJava
+RxAndroid
+RxJS
