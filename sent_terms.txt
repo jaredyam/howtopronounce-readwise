@@ -163,3 +163,8 @@ POP3
 GIS
 SHA1
 Lyft
+MyISAM
+InnoDB
+varchar
+CentOS
+Git
