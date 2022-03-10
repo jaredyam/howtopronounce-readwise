@@ -178,3 +178,8 @@ Zabbix
 Nagios
 Golang
 Matplotlib
+MATLAB
+Numpy
+AJAX
+JSON
+Kaggle
