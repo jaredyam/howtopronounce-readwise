@@ -183,3 +183,8 @@ Numpy
 AJAX
 JSON
 Kaggle
+Babel
+Perl
+Protobuf
+Etcd
+Faas
