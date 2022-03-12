@@ -188,3 +188,8 @@ Perl
 Protobuf
 Etcd
 Faas
+BaaS
+CaaS
+Tumblr
+Tuenti
+Haskell
