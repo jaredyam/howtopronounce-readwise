@@ -193,3 +193,8 @@ CaaS
 Tumblr
 Tuenti
 Haskell
+Delphi
+PHP
+jQuery
+Symfony
+CodeIgniter
