@@ -198,3 +198,8 @@ PHP
 jQuery
 Symfony
 CodeIgniter
+Emoji
+0day
+href
+Qt
+HuaWei
