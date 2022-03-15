@@ -203,3 +203,8 @@ Emoji
 href
 Qt
 HuaWei
+Jexus
+OWIN
+HAProxy
+Lucene
+Solr
