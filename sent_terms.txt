@@ -213,3 +213,8 @@ SQL
 Uber
 Yii
 XAML
+CSRF
+QCon
+GIF
+PNG
+JPG
