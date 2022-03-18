@@ -218,3 +218,8 @@ QCon
 GIF
 PNG
 JPG
+JPEG
+Xen
+Zuul
+Mozilla
+Xerces
