@@ -223,3 +223,8 @@ Xen
 Zuul
 Mozilla
 Xerces
+TomEE
+OSGi
+Karaf
+HBase
+GNU
