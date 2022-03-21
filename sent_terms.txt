@@ -228,3 +228,8 @@ OSGi
 Karaf
 HBase
 GNU
+Debian
+WSDL
+Yahoo
+JavaScript
+Vim
