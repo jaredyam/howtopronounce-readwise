@@ -233,3 +233,8 @@ WSDL
 Yahoo
 JavaScript
 Vim
+IMAP
+LAMP
+Arduino
+JIRA
+Apax
