@@ -248,3 +248,8 @@ Unix
 iPerf
 fio
 JUnit
+Emacs
+RedHat
+CORS
+Intel
+PayPal
