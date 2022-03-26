@@ -253,3 +253,8 @@ RedHat
 CORS
 Intel
 PayPal
+IEEE
+AppC
+Xcode
+Xeon
+NGen
