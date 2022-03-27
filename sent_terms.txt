@@ -258,3 +258,8 @@ AppC
 Xcode
 Xeon
 NGen
+Tizen
+LINQ
+WinSCP
+Phar
+Shiro
