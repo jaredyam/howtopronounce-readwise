@@ -268,3 +268,8 @@ Pecan
 Azkaban
 TokuDB
 ThymeLeaf
+NIO
+Avro
+Modernizr
+Gensim
+Percona
