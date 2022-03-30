@@ -273,3 +273,8 @@ Avro
 Modernizr
 Gensim
 Percona
+Sencha
+Kaspersky
+COM
+Clojure
+Cython
