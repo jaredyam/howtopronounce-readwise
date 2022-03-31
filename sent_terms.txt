@@ -278,3 +278,8 @@ Kaspersky
 COM
 Clojure
 Cython
+PyCon
+Gartner
+Skype
+RSpec
+Scss
