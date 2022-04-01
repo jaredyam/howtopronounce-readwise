@@ -283,3 +283,8 @@ Gartner
 Skype
 RSpec
 Scss
+Sinon
+iTunes
+Samza
+Lazada
+Vertica
