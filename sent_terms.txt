@@ -288,3 +288,8 @@ iTunes
 Samza
 Lazada
 Vertica
+Cloudera
+Verizon
+Teradata
+Rovio
+Kali
