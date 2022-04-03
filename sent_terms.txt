@@ -293,3 +293,8 @@ Verizon
 Teradata
 Rovio
 Kali
+Exif
+Netscape
+ggplot
+Cognos
+Solaris
