@@ -298,3 +298,8 @@ Netscape
 ggplot
 Cognos
 Solaris
+SCSI
+Macaca
+Yandex
+Lua
+Erlang
