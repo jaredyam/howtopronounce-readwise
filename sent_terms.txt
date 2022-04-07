@@ -313,3 +313,8 @@ SPARC
 Nuwa
 Cobar
 SELinux
+Enum
+GUI
+JWT
+SignalR
+UEFI
