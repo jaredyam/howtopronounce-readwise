@@ -318,3 +318,8 @@ GUI
 JWT
 SignalR
 UEFI
+CMOS
+Xfce
+WLAN
+VLAN
+malloc
