@@ -338,3 +338,8 @@ OWASP
 nmon
 QEMU
 zlib
+lib
+MinIO
+Jupyter
+k3s
+chage
