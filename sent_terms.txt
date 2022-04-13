@@ -343,3 +343,8 @@ MinIO
 Jupyter
 k3s
 chage
+Sysmon
+MediatR
+k3OS
+PyPy
+Hyper-V
