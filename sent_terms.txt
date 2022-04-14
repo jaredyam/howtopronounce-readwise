@@ -348,3 +348,8 @@ MediatR
 k3OS
 PyPy
 Hyper-V
+libuv
+Guice
+lighttpd
+Udacity
+Auth0
