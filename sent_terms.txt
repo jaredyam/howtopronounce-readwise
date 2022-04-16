@@ -358,3 +358,8 @@ Buildah
 CRI-O
 Kubic
 rkt
+dir
+gzip
+ngrok
+MXNet
+Helidon
