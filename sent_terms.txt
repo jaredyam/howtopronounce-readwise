@@ -363,3 +363,8 @@ gzip
 ngrok
 MXNet
 Helidon
+Yacc
+LXDE
+mkdir
+epoll
+BSON
