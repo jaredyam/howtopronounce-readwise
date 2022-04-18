@@ -368,3 +368,8 @@ LXDE
 mkdir
 epoll
 BSON
+wget
+str
+ISAPI
+Robotium
+IDE
