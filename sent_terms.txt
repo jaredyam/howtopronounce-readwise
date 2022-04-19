@@ -373,3 +373,8 @@ str
 ISAPI
 Robotium
 IDE
+POJO
+POCO
+ESXi
+Memoization
+DLL
