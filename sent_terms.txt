@@ -378,3 +378,8 @@ POCO
 ESXi
 Memoization
 DLL
+Jinja
+Jinja2
+Xbox
+Jetson
+cin
