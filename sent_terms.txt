@@ -383,3 +383,8 @@ Jinja2
 Xbox
 Jetson
 cin
+cout
+cerr
+ACL
+getfacl
+setfacl
