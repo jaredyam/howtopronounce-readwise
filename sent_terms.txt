@@ -388,3 +388,8 @@ cerr
 ACL
 getfacl
 setfacl
+keepalived
+Moq
+iOS
+doc
+docx
