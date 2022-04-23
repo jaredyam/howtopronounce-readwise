@@ -393,3 +393,8 @@ Moq
 iOS
 doc
 docx
+CIDR
+Qihoo
+Xopero
+sysctl
+CuPy
