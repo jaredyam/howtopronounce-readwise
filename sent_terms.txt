@@ -403,3 +403,8 @@ awk
 Knative
 SAML
 Liquibase
+regex
+CLion
+PyCharm
+exFAT
+CIFAR
