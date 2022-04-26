@@ -408,3 +408,8 @@ CLion
 PyCharm
 exFAT
 CIFAR
+GQL
+ReLU
+URL
+bat
+htaccess
