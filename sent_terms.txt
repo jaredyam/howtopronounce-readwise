@@ -418,3 +418,8 @@ tracert
 Heroku
 IKEA
 SIEM
+TOML
+NoSQL
+edu
+Xterm
+Knex
