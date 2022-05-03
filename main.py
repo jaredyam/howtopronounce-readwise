@@ -82,7 +82,7 @@ class EmailSender:
             return None
 
         email = EmailMessage()
-        email["Subject"] = f"Daily HowToPronounce ({', '.join([term['name'] for term in terms_info])})"
+        email["Subject"] = f"Daily HowToPronounce ({', '.join([term_info['name'] for term_info in terms_info])})"
         email["From"] = self.address
         email["To"] = address
 
@@ -102,8 +102,8 @@ class EmailSender:
 
     def update_sent_terms(self, terms_info):
         with open(self.sent_terms_fpath, "a") as f:
-            for t in terms_info:
-                f.write(t["name"] + "\n")
+            for term_info in terms_info:
+                f.write(term_info["name"] + "\n")
 
 
 if __name__ == "__main__":
