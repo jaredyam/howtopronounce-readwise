@@ -5,6 +5,7 @@ import time
 from email.message import EmailMessage
 from pathlib import Path
 from urllib import parse, request
+from urllib.error import HTTPError
 
 from bs4 import BeautifulSoup
 from jinja2 import Environment, FileSystemLoader
@@ -24,8 +25,13 @@ class EmailSender:
     def crawl(self, term):
         base_url = "http://www.howtopronounce.cc"
         target_url = base_url + "/" + parse.quote(term).lower()
-        with request.urlopen(target_url) as response:
-            soup = BeautifulSoup(response, "html.parser")
+        try:
+            response = request.urlopen(target_url)
+        except HTTPError as e:
+            print(f"[{e.code}] {str(e)} (target URL: {target_url}")
+        else:
+            with response:
+                soup = BeautifulSoup(response, "html.parser")
             cards = soup.find_all("div", class_="card")
             (
                 pronunciation_card,
@@ -61,20 +67,31 @@ class EmailSender:
     def retreive(self):
         if not self.sent_terms_fpath.exists():
             term_info = self.crawl(self.start_term)
-            return [term_info] + [self.crawl(t) for t in term_info["related_terms"][: (self.n_terms_per_retreive - 1)]]
+            assert term_info is not None, "Please launch the sender with a valid <start_term>."
+            terms_info = [term_info]
+            for term in term_info["related_terms"]:
+                term_info = self.crawl(term)
+                if term_info is not None:
+                    terms_info.append(term_info)
+                if len(terms_info) == self.n_terms_per_retreive:
+                    return terms_info
 
         with open(self.sent_terms_fpath, "r") as f:
-            sent_terms = dict.fromkeys((t.strip().lower() for t in f.readlines())).keys()
-
-            terms_info = []
-            start = time.time()
-            for st in sent_terms:
-                for t in self.crawl(st)["related_terms"]:
-                    if t not in sent_terms:
-                        terms_info.append(self.crawl(t))
-                    if len(terms_info) == self.n_terms_per_retreive or (time.time() - start) > 7200:
-                        break
-            return terms_info
+            sent_terms = dict.fromkeys((sent_term.strip().lower() for sent_term in f.readlines())).keys()
+        terms_info = []
+        start = time.time()
+        for sent_term in sent_terms:
+            sent_term_info = self.crawl(sent_term)
+            if sent_term_info is None:
+                print(f"Warning: subpage /{sent_term} has been removed from website.")
+                continue
+            for term in sent_term_info["related_terms"]:
+                if term not in sent_terms:
+                    term_info = self.crawl(term)
+                    if term_info is not None:
+                        terms_info.append(term_info)
+                if len(terms_info) == self.n_terms_per_retreive or (time.time() - start) > 7200:
+                    return terms_info
 
     def send(self, terms_info, address):
         if len(terms_info) == 0:
