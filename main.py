@@ -108,9 +108,7 @@ class EmailSender:
         html_content = template.render(terms=terms_info)
         email.set_content(html_content, subtype="html")
 
-        # Create a secure SSL context
         context = ssl.create_default_context()
-        # with smtplib.SMTP("localhost", 1025) as server:
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
             server.login(self.address, self.password)
             server.send_message(email)
