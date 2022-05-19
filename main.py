@@ -68,17 +68,18 @@ class EmailSender:
         if not self.sent_terms_fpath.exists():
             term_info = self.crawl(self.start_term)
             assert term_info is not None, "Please launch the sender with a valid <start_term>."
-            terms_info = [term_info]
+            terms_info = {self.start_term: term_info}
             for term in term_info["related_terms"]:
-                term_info = self.crawl(term)
-                if term_info is not None:
-                    terms_info.append(term_info)
-                if len(terms_info) == self.n_terms_per_retreive:
-                    return terms_info
+                if term not in terms_info:
+                    term_info = self.crawl(term)
+                    if term_info is not None:
+                        terms_info[term] = term_info
+                    if len(terms_info) == self.n_terms_per_retreive:
+                        return terms_info
 
         with open(self.sent_terms_fpath, "r") as f:
             sent_terms = dict.fromkeys((sent_term.strip().lower() for sent_term in f.readlines())).keys()
-        terms_info = []
+        terms_info = dict()
         start = time.time()
         for sent_term in sent_terms:
             sent_term_info = self.crawl(sent_term)
@@ -86,10 +87,10 @@ class EmailSender:
                 print(f"Warning: subpage /{sent_term} has been removed from website.")
                 continue
             for term in sent_term_info["related_terms"]:
-                if term not in sent_terms:
+                if term not in sent_terms and term not in terms_info:
                     term_info = self.crawl(term)
                     if term_info is not None:
-                        terms_info.append(term_info)
+                        terms_info[term] = term_info
                 if len(terms_info) == self.n_terms_per_retreive or (time.time() - start) > 7200:
                     return terms_info
 
@@ -99,18 +100,16 @@ class EmailSender:
             return None
 
         email = EmailMessage()
-        email["Subject"] = f"Daily HowToPronounce ({', '.join([term_info['name'] for term_info in terms_info])})"
+        email["Subject"] = f"Daily HowToPronounce ({', '.join([term['name'] for term in terms_info.values()])})"
         email["From"] = self.address
         email["To"] = address
 
         env = Environment(loader=FileSystemLoader("./templates"))
         template = env.get_template("email.html")
-        html_content = template.render(terms=terms_info)
+        html_content = template.render(terms=terms_info.values())
         email.set_content(html_content, subtype="html")
 
-        # Create a secure SSL context
         context = ssl.create_default_context()
-        # with smtplib.SMTP("localhost", 1025) as server:
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
             server.login(self.address, self.password)
             server.send_message(email)
@@ -119,8 +118,8 @@ class EmailSender:
 
     def update_sent_terms(self, terms_info):
         with open(self.sent_terms_fpath, "a") as f:
-            for term_info in terms_info:
-                f.write(term_info["name"] + "\n")
+            for term in terms_info.values():
+                f.write(term["name"] + "\n")
 
 
 if __name__ == "__main__":
