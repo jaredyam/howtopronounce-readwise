@@ -423,3 +423,8 @@ NoSQL
 edu
 Xterm
 Knex
+scikit-image
+DES
+conf
+Squert
+proc
