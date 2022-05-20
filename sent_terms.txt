@@ -428,3 +428,8 @@ DES
 conf
 Squert
 proc
+Zsh
+Tmux
+LDAP
+Kryo
+ArangoDB
