@@ -448,3 +448,8 @@ Nette
 Agavi
 Webyog
 Ramda
+ASUS
+Acer
+Samsung
+InfoQ
+Joomla
