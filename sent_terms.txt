@@ -453,3 +453,8 @@ Acer
 Samsung
 InfoQ
 Joomla
+Imgur
+Vulkan
+REPL
+Codis
+ECMA
