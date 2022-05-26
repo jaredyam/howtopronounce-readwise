@@ -458,3 +458,8 @@ Vulkan
 REPL
 Codis
 ECMA
+Phalcon
+Yaf
+Deployer
+Capistrano
+Ansible
