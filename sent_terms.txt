@@ -468,3 +468,8 @@ Browserify
 OCaml
 Axios
 Redux
+Polyfill
+BIOS
+YAML
+Curl
+INI
