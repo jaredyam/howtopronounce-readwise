@@ -473,3 +473,8 @@ BIOS
 YAML
 Curl
 INI
+Gradle
+Django
+Theano
+Caffe
+Telerik
