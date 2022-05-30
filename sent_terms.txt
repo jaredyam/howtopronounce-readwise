@@ -478,3 +478,8 @@ Django
 Theano
 Caffe
 Telerik
+MongoDB
+Cortana
+Siri
+Axure
+Zepto
