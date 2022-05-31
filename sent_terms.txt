@@ -483,3 +483,8 @@ Cortana
 Siri
 Axure
 Zepto
+jUDDI
+App
+Cygwin
+Flickr
+Traefik
