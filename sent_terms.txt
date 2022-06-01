@@ -488,3 +488,8 @@ App
 Cygwin
 Flickr
 Traefik
+GraphQL
+ANTLR
+scanf
+MacOS
+NiFi
