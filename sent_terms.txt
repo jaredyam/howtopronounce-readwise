@@ -493,3 +493,8 @@ ANTLR
 scanf
 MacOS
 NiFi
+ZXing
+Tigase
+Btrfs
+fabric8
+EICAR
