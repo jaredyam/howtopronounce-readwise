@@ -503,3 +503,8 @@ ngIf
 RHEL
 Gunicorn
 ONNX
+Ktor
+sudo
+TiKV
+TiDB
+spaCy
