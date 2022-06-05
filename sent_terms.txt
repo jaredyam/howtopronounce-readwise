@@ -508,3 +508,8 @@ sudo
 TiKV
 TiDB
 spaCy
+CLI
+nohup
+sklearn
+TestNG
+SAS
