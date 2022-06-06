@@ -513,3 +513,8 @@ nohup
 sklearn
 TestNG
 SAS
+cuDNN
+WAMP
+Galera
+tmp
+CUDA
