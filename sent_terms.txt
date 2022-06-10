@@ -533,3 +533,8 @@ UDDI
 Zeplin
 Flinto
 Xorg
+Cygames
+Wasm
+NASM
+FLAC
+Werkzeug
