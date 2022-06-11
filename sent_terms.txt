@@ -538,3 +538,8 @@ Wasm
 NASM
 FLAC
 Werkzeug
+calloc
+Tcsh
+Typora
+chroot
+yml
