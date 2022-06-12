@@ -543,3 +543,8 @@ Tcsh
 Typora
 chroot
 yml
+Tyk
+NNEF
+OpenVX
+Alluxio
+Striim
