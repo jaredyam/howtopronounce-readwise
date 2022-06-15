@@ -558,3 +558,8 @@ stderr
 WYSIWYG
 MATE
 RAII
+systemctl
+GraphiQL
+SHA
+Vitess
+uint
