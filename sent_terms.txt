@@ -563,3 +563,8 @@ GraphiQL
 SHA
 Vitess
 uint
+WinRAR
+TikZ
+XeTeX
+ConTeXt
+TeX
