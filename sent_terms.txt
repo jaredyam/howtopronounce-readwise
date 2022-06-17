@@ -568,3 +568,8 @@ TikZ
 XeTeX
 ConTeXt
 TeX
+AWS
+pwd
+LLVM
+Asurion
+Arch
