@@ -573,3 +573,8 @@ pwd
 LLVM
 Asurion
 Arch
+VuFind
+Tweepy
+Twilio
+Dijkstra
+ISO
