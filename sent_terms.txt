@@ -583,3 +583,8 @@ SikuliX
 CQRS
 SEO
 Okta
+CRUD
+Phabricator
+ZEIT
+Thanos
+l10n
