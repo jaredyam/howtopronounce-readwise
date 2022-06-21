@@ -588,3 +588,8 @@ Phabricator
 ZEIT
 Thanos
 l10n
+etc
+jOOR
+Kubuntu
+log4j
+Katalon
