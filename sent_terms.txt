@@ -593,3 +593,8 @@ jOOR
 Kubuntu
 log4j
 Katalon
+XSRF
+systemd
+WSGI
+Jython
+HP-UX
