@@ -598,3 +598,8 @@ systemd
 WSGI
 Jython
 HP-UX
+lsof
+PNaCl
+sqrt
+MicroK8s
+DAO
