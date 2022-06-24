@@ -603,3 +603,8 @@ PNaCl
 sqrt
 MicroK8s
 DAO
+alloc
+sysstat
+Vearch
+Faiss
+Kubelet
