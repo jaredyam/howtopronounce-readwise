@@ -608,3 +608,8 @@ sysstat
 Vearch
 Faiss
 Kubelet
+sha1sum
+OLAP
+OLTP
+csh
+oh-my-zsh
