@@ -613,3 +613,8 @@ OLAP
 OLTP
 csh
 oh-my-zsh
+Shopify
+RBAC
+Logrus
+Veeam
+xhyve
