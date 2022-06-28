@@ -623,3 +623,8 @@ EULA
 a11y
 Selendroid
 MPEG
+exe
+Arxan
+Kiali
+chmod
+chown
