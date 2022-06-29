@@ -628,3 +628,8 @@ Arxan
 Kiali
 chmod
 chown
+chattr
+chgrp
+FIFO
+MiNiFi
+KDE
