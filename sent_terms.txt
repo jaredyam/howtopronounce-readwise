@@ -633,3 +633,8 @@ chgrp
 FIFO
 MiNiFi
 KDE
+usr
+Hexo
+LIFO
+WHOIS
+Netmiko
