@@ -638,3 +638,8 @@ Hexo
 LIFO
 WHOIS
 Netmiko
+Pyomo
+MAMP
+IACR
+HTAP
+OIDC
