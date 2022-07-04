@@ -653,3 +653,8 @@ LaCie
 Pentaho
 env
 HMAC
+PaaSTA
+NUnit
+Trivy
+NgRx
+Icinga
