@@ -658,3 +658,8 @@ NUnit
 Trivy
 NgRx
 Icinga
+GAN
+UUID
+RDF
+RTOS
+sbt
