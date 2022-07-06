@@ -663,3 +663,8 @@ UUID
 RDF
 RTOS
 sbt
+Reltio
+Mylyn
+Qubole
+Waze
+Ranorex
