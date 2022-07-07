@@ -668,3 +668,8 @@ Mylyn
 Qubole
 Waze
 Ranorex
+WCAG
+Xubuntu
+SYCL
+PartiQL
+LLILC
