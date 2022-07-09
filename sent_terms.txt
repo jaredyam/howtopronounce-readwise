@@ -678,3 +678,8 @@ Twython
 wxPyWiki
 HTTPie
 OpenSRF
+Qub3d
+Tika
+Tru64
+CPython
+Xvid
