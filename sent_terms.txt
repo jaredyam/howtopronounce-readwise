@@ -683,3 +683,8 @@ Tika
 Tru64
 CPython
 Xvid
+DNSmasq
+Pregel
+SHA3
+RAR
+Adminer
