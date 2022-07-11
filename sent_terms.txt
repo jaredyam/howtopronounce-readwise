@@ -688,3 +688,8 @@ Pregel
 SHA3
 RAR
 Adminer
+ThingWorx
+HDMI
+Mutex
+Velero
+muxer
