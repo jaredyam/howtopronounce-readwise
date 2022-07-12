@@ -693,3 +693,8 @@ HDMI
 Mutex
 Velero
 muxer
+HATEOAS
+OSINT
+Kustomize
+gradlew
+Emscripten
