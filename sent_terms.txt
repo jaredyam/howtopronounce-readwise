@@ -708,3 +708,8 @@ GUID
 Udemy
 Deno
 SOA
+Mnesia
+Horovod
+TACACS
+Costco
+Anthos
