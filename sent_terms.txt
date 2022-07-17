@@ -718,3 +718,8 @@ Gluu
 Kolla
 MIME
 Kayobe
+ITIL
+AXELOS
+Silq
+Patreon
+ECDSA
