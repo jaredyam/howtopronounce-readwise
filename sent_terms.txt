@@ -723,3 +723,8 @@ AXELOS
 Silq
 Patreon
 ECDSA
+Keepa
+UniRx
+Scilab
+Tarjan
+KNIME
