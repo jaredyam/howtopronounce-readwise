@@ -738,3 +738,8 @@ M3U8
 WAN
 Tacotron
 Bokeh
+Gerrit
+Kuma
+Konga
+Lubuntu
+Heketi
