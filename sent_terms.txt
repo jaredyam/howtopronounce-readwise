@@ -743,3 +743,8 @@ Kuma
 Konga
 Lubuntu
 Heketi
+McAfee
+ELMo
+SSH
+md
+SysV
