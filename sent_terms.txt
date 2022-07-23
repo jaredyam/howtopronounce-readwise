@@ -748,3 +748,8 @@ ELMo
 SSH
 md
 SysV
+HikariCP
+printf
+Diffie-Hellman
+IMSI
+SASL
