@@ -753,3 +753,8 @@ printf
 Diffie-Hellman
 IMSI
 SASL
+MNIST
+ARP
+dat
+SYN
+UAT
