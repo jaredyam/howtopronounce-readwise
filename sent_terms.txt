@@ -763,3 +763,8 @@ Pysa
 Seq
 CNTK
 NDIS
+JWS
+Xilinx
+Altera
+DDD
+ISAM
