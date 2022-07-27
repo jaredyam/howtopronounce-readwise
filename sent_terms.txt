@@ -768,3 +768,8 @@ Xilinx
 Altera
 DDD
 ISAM
+Zynq
+CBOW
+Winium
+xBIM
+SignAll
