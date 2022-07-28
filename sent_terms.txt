@@ -773,3 +773,8 @@ CBOW
 Winium
 xBIM
 SignAll
+ICANN
+IANA
+ESB
+realloc
+trie
