@@ -783,3 +783,8 @@ Brotli
 DaaS
 AES
 GDB
+XMPP
+SOLID
+HTTPS
+Snyk
+BDaaS
