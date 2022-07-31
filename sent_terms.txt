@@ -788,3 +788,8 @@ SOLID
 HTTPS
 Snyk
 BDaaS
+MIT
+bashrc
+cshrc
+zshrc
+Katta
