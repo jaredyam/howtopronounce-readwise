@@ -793,3 +793,8 @@ bashrc
 cshrc
 zshrc
 Katta
+Adhearsion
+tty
+Alacritty
+SAML2P
+AIOps
