@@ -798,3 +798,8 @@ tty
 Alacritty
 SAML2P
 AIOps
+npm
+ACID
+Tribuo
+NVRAM
+SYSVOL
