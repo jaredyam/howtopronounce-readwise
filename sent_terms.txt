@@ -813,3 +813,8 @@ POI
 Zelle
 Numba
 Stata
+Doxygen
+Ryzen
+Pipl
+Adwaita
+SARGable
