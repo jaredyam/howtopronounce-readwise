@@ -823,3 +823,8 @@ dev
 PCMCIA
 Pyston
 RLax
+qb4j
+Pyjion
+Vultr
+suPHP
+bhyve
