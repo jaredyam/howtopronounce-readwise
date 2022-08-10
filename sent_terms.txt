@@ -838,3 +838,8 @@ MSSQL
 nopCommerce
 STaaS
 ioctl
+SQLAlchemy
+Levenshtein
+KoNLPy
+Corva
+nodemon
