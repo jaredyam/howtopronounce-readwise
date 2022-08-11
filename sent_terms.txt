@@ -843,3 +843,8 @@ Levenshtein
 KoNLPy
 Corva
 nodemon
+Formik
+gopls
+Lodash
+ReactiveX
+kOps
