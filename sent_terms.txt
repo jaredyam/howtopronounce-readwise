@@ -853,3 +853,8 @@ Gigamon
 XHProf
 CISSP
 chkconfig
+Cavium
+lsattr
+EEPROM
+Lerna
+NaaS
