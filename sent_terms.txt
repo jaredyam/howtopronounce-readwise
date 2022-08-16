@@ -868,3 +868,8 @@ Syuzhet
 Hamler
 YARP
 Plankalkül
+Skia
+Krustlet
+QUIC
+SPDY
+VirtIO
