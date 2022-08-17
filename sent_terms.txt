@@ -873,3 +873,8 @@ Krustlet
 QUIC
 SPDY
 VirtIO
+Guix
+seL4
+Zopfli
+Netezza
+Kompose
