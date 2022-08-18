@@ -878,3 +878,8 @@ seL4
 Zopfli
 Netezza
 Kompose
+Seccomp
+Kerberos
+cAdvisor
+CORDIC
+Kaniko
