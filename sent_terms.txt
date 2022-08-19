@@ -883,3 +883,8 @@ Kerberos
 cAdvisor
 CORDIC
 Kaniko
+Resque
+Kpt
+OMNeT++
+Kodachi
+Blazor
